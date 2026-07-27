@@ -6,7 +6,7 @@ import logoLight from "../assets/logo-light.png";
 export default function Navbar({ onOpenModal }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     // Detect dark mode preference
@@ -61,7 +61,7 @@ export default function Navbar({ onOpenModal }) {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container" height="80px" width="100%">
           <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="nav-logo" >
-            <img src={isDarkMode ? logoLight : logoDark} alt="MeritHalo Logo"  />
+            <img src={isDarkMode ? logoDark : logoDark} alt="MeritHalo Logo"  />
           </a>
 
           {/* Desktop Nav Links */}
@@ -96,7 +96,7 @@ export default function Navbar({ onOpenModal }) {
       {/* Mobile Nav Sidebar */}
       <div className={`mobile-sidebar ${isOpen ? 'open' : ''}`}>
         <div className="mobile-sidebar-header">
-          <img src={isDarkMode ? logoLight : logoDark} alt="MeritHalo Logo" className="mobile-logo" />
+          <img src={isDarkMode ? logoDark : logoDark} alt="MeritHalo Logo" className="mobile-logo" />
           <button className="close-btn" onClick={() => setIsOpen(false)}>
             <X size={24} />
           </button>

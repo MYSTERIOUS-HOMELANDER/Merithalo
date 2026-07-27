@@ -42,7 +42,7 @@ export default function Preloader() {
         
         {/* Animated Logo */}
         <div className="preloader-logo animate-pulse-logo">
-          <img src={isDarkMode ? logoLight : logoDark} alt="MeritHalo Logo" className="preloader-logo-img" />
+          <img src={isDarkMode ? logoDark : logoDark} alt="MeritHalo Logo" className="preloader-logo-img" />
         </div>
 
         {/* Spinner Loader */}
