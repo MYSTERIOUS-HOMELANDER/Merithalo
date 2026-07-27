@@ -96,7 +96,7 @@ export default function Navbar({ onOpenModal }) {
       {/* Mobile Nav Sidebar */}
       <div className={`mobile-sidebar ${isOpen ? 'open' : ''}`}>
         <div className="mobile-sidebar-header">
-          <img src={isDarkMode ? logoDark : logoLight} alt="MeritHalo Logo" className="mobile-logo" />
+          <img src={isDarkMode ? logoLight : logoDark} alt="MeritHalo Logo" className="mobile-logo" />
           <button className="close-btn" onClick={() => setIsOpen(false)}>
             <X size={24} />
           </button>

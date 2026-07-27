@@ -104,7 +104,7 @@ export default function Footer({ onOpenModal }) {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} MeritHalo. All Rights Reserved. Guiding Future Doctors Ethically.</p>
+          <p>&copy; {currentYear} MeritHalo. All Rights Reserved. We don't sell admissons, we guide future doctors.</p>
           <div className="bottom-links">
             <span className="clickable-span" onClick={onOpenModal}>Privacy Policy</span>
             <span className="divider">|</span>
