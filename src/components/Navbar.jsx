@@ -6,7 +6,7 @@ import logoLight from "../assets/logo-light.png";
 export default function Navbar({ onOpenModal }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     // Detect dark mode preference
