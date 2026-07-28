@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, ExternalLink, ShieldAlert } from 'lucide-react';
-import logoDark from '../assets/logo-dark.svg';
+import logoDark from '../assets/logo-dark.png';
 
 export default function Footer({ onOpenModal }) {
   const currentYear = new Date().getFullYear();
@@ -135,7 +135,7 @@ export default function Footer({ onOpenModal }) {
         }
         
         .footer-logo {
-          height: 48px;
+          height: 120px;
           width: auto;
           margin-bottom: 24px;
           align-self: flex-start;
