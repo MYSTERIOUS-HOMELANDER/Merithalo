@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, ExternalLink, ShieldAlert } from 'lucide-react';
-import logoLight from '../assets/logo-light.svg';
+import logoDark from '../assets/logo-dark.svg';
 
 export default function Footer({ onOpenModal }) {
   const currentYear = new Date().getFullYear();
@@ -28,7 +28,7 @@ export default function Footer({ onOpenModal }) {
         
         {/* Company Intro Column */}
         <div className="footer-brand-col">
-          <img src={logoLight} alt="MeritHalo Logo" className="footer-logo" />
+          <img src={logoDark} alt="MeritHalo Logo" className="footer-logo" />
           <p className="brand-desc">
             MeritHalo is an independent MBBS counselling advisory and verification cell. We help students navigate the medical admissions pathway with complete transparency and zero false promises.
           </p>
